@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const [latitude, longitude] = selectedCity.split(',');
 
         // Fetch weather data in JSON format from the API
-        const apiUrl = `http://www.7timer.info/bin/api.pl?lon=${longitude}&lat=${latitude}&product=civil&output=json`;
+        const apiUrl = `https://www.7timer.info/bin/api.pl?lon=${longitude}&lat=${latitude}&product=civil&output=json`;
 
         fetch(apiUrl)
             .then(response => {
